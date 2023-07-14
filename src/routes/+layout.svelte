@@ -5,4 +5,9 @@
 
 <div class="app">
 	<Navbar />
+
+	<main>
+	  <slot />
+	</main>
+
 </div>
