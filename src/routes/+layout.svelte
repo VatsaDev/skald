@@ -1,12 +1,10 @@
 <script>
+  import Navbar from './navbar.svelte';
 	import './styles.css';
 </script>
 
 <div class="app">
-
-	<main>
-		<slot />
-	</main>
+	<Navbar />
 
 	<footer>
 		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>

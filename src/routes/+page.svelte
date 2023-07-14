@@ -2,7 +2,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Skald</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
