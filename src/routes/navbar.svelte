@@ -4,6 +4,7 @@
 
 <nav class="flex items-center justify-between flex-wrap bg-slate-900 p-6">
   <div class="flex items-center flex-shrink-0 text-slate-100 mr-6">
+    <img src="../lib/images/logo-white.png" alt="logo-white">
     <span class="font-semibold text-4xl tracking-tight">Skald</span>
   </div>
   <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
