@@ -14,6 +14,4 @@
 	<h2 class="font-sans bg-violet-400">
 		try editing <strong>src/routes/+page.svelte</strong>
 	</h2>
-
-	<Counter />
 </section>
