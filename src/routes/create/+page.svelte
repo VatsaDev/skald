@@ -4,5 +4,5 @@
 </svelte:head>
 
 <section>
-	<h1>Create</h1>
+	<h1 class="text-center text-8xl m-8">Create</h1>
 </section>

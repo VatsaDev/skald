@@ -4,5 +4,5 @@
 </svelte:head>
 
 <section>
-	pricing
+	<h1 class="text-center text-8xl m-8">pricing</h1>
 </section>
