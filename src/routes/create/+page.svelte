@@ -24,6 +24,9 @@
 </script>
 
 <section>
-	<h1 class="text-center text-8xl m-8">Create</h1>
-	<input class="m-8 border p-2" type="text" placeholder="hello">
+	<h1 class="text-center text-8xl m-8 font-bold">Create</h1>
+	<textarea class="bg-slate-100 block w-4/5 h-96 mx-auto drop-shadow-2xl rounded-lg p-8" type="text" placeholder="hello"></textarea>
+    <div id="btn-wrapper" class="w-4/5 mx-auto">
+        <button class="bg-amber-500 text-white w-48 h-10 rounded-full m-8 float-right">Sing</button>
+    </div>   
 </section>
