@@ -11,7 +11,7 @@
             {
                 headers: { 
                     "Content-Type": "application/json",
-                    Authorization: `Bearer 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` Content-Type: text/html; charset=utf-8 
+                    Authorization: `Bearer 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`
                 },
                 method: "POST",
                 body: JSON.stringify(data),
