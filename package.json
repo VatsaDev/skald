@@ -28,6 +28,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@xenova/transformers": "^2.4.1"
+		"@xenova/transformers": "^2.4.1",
+		"node-fetch": "^3.3.1"
 	}
 }
