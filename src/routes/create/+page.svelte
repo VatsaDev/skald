@@ -6,28 +6,14 @@
 <script>
 	let text = "once upon a time, there lived a princess in a castle, who";
 
-	async function query(data) {
-        const response = await fetch(
-            "https://api-inference.huggingface.co/models/gpt2",
-            {
-                headers: { 
-                    "Content-Type": "application/json",
-                    Authorization: `Bearer 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`
-                },
-                method: "POST",
-                body: JSON.stringify(data),
-            }
-        );
-        const result = await response.json();
-        return result;
-    }
+	import { pipeline } from '@xenova/transformers';
 
-    function narrate(){
-        query(text).then((response) => {
-            console.log(response)
-            text = JSON.stringify(response);
-        })
-    }
+// Allocate a pipeline for sentiment-analysis
+let pipe = await pipeline('sentiment-analysis');
+
+let out = await pipe('I love transformers!');
+console.log(out)
+// [{'label': 'POSITIVE', 'score': 0.999817686}]
 </script>
 
 <section>
@@ -35,7 +21,7 @@
 	<textarea id="editor" class="bg-slate-100 block w-4/5 h-96 mx-auto drop-shadow-2xl rounded-lg p-8" type="text" placeholder="hello">{text}</textarea>
     <div id="btn-wrapper" class="w-4/5 mx-auto">
         <button class="bg-amber-500 text-white w-48 h-10 rounded-full m-8 float-right" 
-            on:click={narrate}>
+            on:click={}>
         narrate
         </button>
     </div>   
