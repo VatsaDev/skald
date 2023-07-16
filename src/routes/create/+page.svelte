@@ -21,9 +21,10 @@
         return result;
     }
     function narrate(){
+        text = document.getElementById("editor").value
         query(text).then((response) => {
             console.log(response[0])
-            text = response[0];
+            text = response[0].generated_text;
         })
     }
 </script>
