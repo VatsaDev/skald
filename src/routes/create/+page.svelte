@@ -9,7 +9,10 @@
         const response = await fetch(
             "https://api-inference.huggingface.co/models/bigscience/bloom",
             {
-                headers: { Authorization: `Bearer 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` },
+                headers: { 
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer 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` Content-Type: text/html; charset=utf-8 
+                },
                 method: "POST",
                 body: JSON.stringify(data),
             }
