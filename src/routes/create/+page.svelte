@@ -4,7 +4,7 @@
 </svelte:head>
 
 <script>
-	let text = "hello";
+	let text = "once upon a time, there lived a princess in a castle, who";
 
 	async function query(data) {
         const response = await fetch(
@@ -21,18 +21,22 @@
         const result = await response.json();
         return result;
     }
-    
-    query("Can you please let us know more details about your ").then((response) => {
-    text = JSON.stringify(response);
-});
+
+    function narrate(){
+        query(text).then((response) => {
+            console.log(response)
+            text = JSON.stringify(response);
+        })
+    }
 </script>
 
 <section>
 	<h1 class="text-center text-8xl m-8 font-bold">Create</h1>
-	<textarea class="bg-slate-100 block w-4/5 h-96 mx-auto drop-shadow-2xl rounded-lg p-8" type="text" placeholder="hello">{text}</textarea>
+	<textarea id="editor" class="bg-slate-100 block w-4/5 h-96 mx-auto drop-shadow-2xl rounded-lg p-8" type="text" placeholder="hello">{text}</textarea>
     <div id="btn-wrapper" class="w-4/5 mx-auto">
-        <button class="bg-amber-500 text-white w-48 h-10 rounded-full m-8 float-right" on:click={query(text).then((response) => {
-    text = JSON.stringify(response);
-});}>narrate</button>
+        <button class="bg-amber-500 text-white w-48 h-10 rounded-full m-8 float-right" 
+            on:click={narrate}>
+        narrate
+        </button>
     </div>   
 </section>
