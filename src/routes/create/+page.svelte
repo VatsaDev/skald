@@ -7,7 +7,7 @@
 	//import fetch from "node-fetch";
 	async function query(data) {
         const response = await fetch(
-            "https://api-inference.huggingface.co/models/gpt2",
+            "https://api-inference.huggingface.co/models/bigscience/bloom",
             {
                 headers: { Authorization: `Bearer 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` },
                 method: "POST",
