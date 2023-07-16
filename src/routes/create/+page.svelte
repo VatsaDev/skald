@@ -4,10 +4,11 @@
 </svelte:head>
 
 <script>
-	//import fetch from "node-fetch";
+	let text = "hello";
+
 	async function query(data) {
         const response = await fetch(
-            "https://api-inference.huggingface.co/models/bigscience/bloom",
+            "https://api-inference.huggingface.co/models/gpt2",
             {
                 headers: { 
                     "Content-Type": "application/json",
@@ -22,14 +23,14 @@
     }
     
     query("Can you please let us know more details about your ").then((response) => {
-    console.log(JSON.stringify(response));
+    text = JSON.stringify(response);
 });
 </script>
 
 <section>
 	<h1 class="text-center text-8xl m-8 font-bold">Create</h1>
-	<textarea class="bg-slate-100 block w-4/5 h-96 mx-auto drop-shadow-2xl rounded-lg p-8" type="text" placeholder="hello"></textarea>
+	<textarea class="bg-slate-100 block w-4/5 h-96 mx-auto drop-shadow-2xl rounded-lg p-8" type="text" placeholder="hello">{text}</textarea>
     <div id="btn-wrapper" class="w-4/5 mx-auto">
-        <button class="bg-amber-500 text-white w-48 h-10 rounded-full m-8 float-right" on:click={query}>Narrarate</button>
+        <button class="bg-amber-500 text-white w-48 h-10 rounded-full m-8 float-right" on:click={query}>narrate</button>
     </div>   
 </section>
