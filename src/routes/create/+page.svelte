@@ -20,9 +20,10 @@
         );
         const result = await response.json();
         return result;
-
-        text = JSON.stringify(response);
     }
+    
+    query("Can you please let us know more details about your ").then((response) => {
+    text = JSON.stringify(response);
 });
 </script>
 
@@ -30,6 +31,8 @@
 	<h1 class="text-center text-8xl m-8 font-bold">Create</h1>
 	<textarea class="bg-slate-100 block w-4/5 h-96 mx-auto drop-shadow-2xl rounded-lg p-8" type="text" placeholder="hello">{text}</textarea>
     <div id="btn-wrapper" class="w-4/5 mx-auto">
-        <button class="bg-amber-500 text-white w-48 h-10 rounded-full m-8 float-right" on:click={query(text)}>narrate</button>
+        <button class="bg-amber-500 text-white w-48 h-10 rounded-full m-8 float-right" on:click={query(text).then((response) => {
+    text = JSON.stringify(response);
+});}>narrate</button>
     </div>   
 </section>
