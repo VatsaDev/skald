@@ -4,21 +4,10 @@
 </svelte:head>
 
 <script>
-    import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.3.0';
-
-    async function queryTest() {
-        const generateEmbeddings = await pipeline(
-            'feature-extraction',
-            'Xenova/all-MiniLM-L6-v2'
-        );
-
-        console.log(await generateEmbeddings("once upon a time, there lived a princess in a castle, who").data);
-    }
-
 	let text = "once upon a time, there lived a princess in a castle, who";
 	async function query(data) {
         const response = await fetch(
-            "https://api-inference.huggingface.co/models/gpt2",
+            "https://api-inference.huggingface.co/models/tiiuae/falcon-7b-instruct",
             {
                 headers: { 
                     "Content-Type": "application/json",
