@@ -15,7 +15,10 @@
         console.log(await generateEmbeddings("once upon a time, there lived a princess in a castle, who").data);
     }*/
 
-    
+    import { pipeline } from '@xenova/transformers';
+async function queryTest(){
+    let classifier = await pipeline('sentiment-analysis');
+}
 
 	let text = "once upon a time, there lived a princess in a castle, who";
 	async function query(data) {
