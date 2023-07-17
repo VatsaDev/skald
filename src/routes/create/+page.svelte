@@ -4,7 +4,7 @@
 </svelte:head>
 
 <script>
-    import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.3.0';
+    /*import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.3.0';
 
     async function queryTest() {
         const generateEmbeddings = await pipeline(
@@ -13,7 +13,9 @@
         );
 
         console.log(await generateEmbeddings("once upon a time, there lived a princess in a castle, who").data);
-    }
+    }*/
+
+    
 
 	let text = "once upon a time, there lived a princess in a castle, who";
 	async function query(data) {
