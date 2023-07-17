@@ -18,7 +18,7 @@
 	let text = "once upon a time, there lived a princess in a castle, who";
 	async function query(data) {
         const response = await fetch(
-            "https://api-inference.huggingface.co/models/gpt2",//falcon-7b-instruct
+            "https://api-inference.huggingface.co/models/bigscience/bloom-560m",//falcon-7b-instruct
             {
                 headers: { 
                     "Content-Type": "application/json",
