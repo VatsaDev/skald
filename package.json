@@ -29,6 +29,7 @@
 	"type": "module",
 	"dependencies": {
 		"@xenova/transformers": "^2.4.1",
+		"firebase": "^10.0.0",
 		"node-fetch": "^3.3.1"
 	}
-} 
+}
