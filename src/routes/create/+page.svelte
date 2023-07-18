@@ -22,8 +22,27 @@
 
     // narrate function
 
-	let text = "once upon a time, there lived a princess in a castle, who";
-	async function query(data) {
+    var text = "once upon a time, there lived a princess in a castle, who"
+
+    async function gquery(data){
+        const url = 'https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyDucoz8cp-KDI5_LWXBzbepSc6MN1Ly-Iw';
+
+        var textBody = '{ "prompt": { "text": "'+data+'"} }'
+
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: textBody,
+        });
+
+        const gtext = await response.json();
+        console.log(gtext.candidates[0].output);
+        text = gtext.candidates[0].output
+    }
+
+	/*async function query(data) {
         const response = await fetch(
             "https://api-inference.huggingface.co/models/tiiuae/falcon-7b-instruct",
             {
@@ -37,13 +56,11 @@
         );
         const result = await response.json();
         return result;
-    }
+    }*/ // replace with bert adjective replace
+
     function narrate(){
         text = document.getElementById("editor").value
-        query(text).then((response) => {
-            console.log(response)
-            text = response[0].generated_text;
-        })
+        gquery(text)
     }
 </script>
 
