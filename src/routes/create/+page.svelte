@@ -15,6 +15,8 @@
         console.log(await generateEmbeddings("once upon a time, there lived a princess in a castle, who").data);
     }*/
 
+    // narrate
+
 	let text = "once upon a time, there lived a princess in a castle, who";
 	async function query(data) {
         const response = await fetch(
