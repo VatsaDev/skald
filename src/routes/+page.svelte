@@ -1,4 +1,22 @@
 <script>
+	var pathArray = ["/banners/dragonFight.jpg","/banners/dwarfMine.jpg","/banners/fantasyCastle.jpg","/banners/frozenWaste.jpg","/banners/jungleTemple.jpg","/banners/magicSwamp.jpg","/banners/rusticVillage.jpg"]
+	var path = pathArray[Math.floor(Math.random() * pathArray.length)];
+	var quote = ""
+	if (path == pathArray[0]){
+		quote = "Have a viking army fight a dragon"
+	}if (path == pathArray[1]){
+		quote = "Visit the Dwarven mines to the north"
+	}if (path == pathArray[2]){
+		quote = "Visit the home of the Royals"
+	}if (path == pathArray[3]){
+		quote = "Trudge Through frozen wastelands"
+	}if (path == pathArray[4]){
+		quote = "Loot the jungle temple"
+	}if (path == pathArray[5]){
+		quote = "Tread the dangers of the swamp"
+	}if (path == pathArray[6]){
+		quote = "Get some Bread and Ale at the Village tavern"
+	}
 </script>
 
 <svelte:head>
@@ -7,18 +25,15 @@
 </svelte:head>
 
 <section>
-	<header>
-		<img src="/logo-black.png" alt="logo-black" class="mx-auto mt-6"><br>
+	<header class="w-full p-8 bg-cover bg-center text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('{path}')">
+		<img src="/logo-white.png" alt="logo-black" class="mx-auto mt-6"><br>
 		<h1 class="font-sans font-bold text-8xl text-center my-2">
 			Skald
 		</h1>
-		<h2 class="text-center text-4xl my-4">
-			Lose yourself <br>
-			<div class="text-center text-2xl my-4">
-				in the northern mines
-			</div>
+		<h2 class="text-center text-4xl my-8">
+				{quote}
 		</h2>
-		<h2 class="text-center text-lg my-4">
+		<h2 class="text-center text-lg my-8">
 			Unique, Evocative Stories with the power of Generative AI, at your fingertips
 		</h2>
 	</header>
