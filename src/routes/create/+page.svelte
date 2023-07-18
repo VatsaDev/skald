@@ -4,18 +4,25 @@
 </svelte:head>
 
 <script>
-    /*import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.3.0';
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    import { getFirestore } from "firebase/firestore"
 
-    async function queryTest() {
-        const generateEmbeddings = await pipeline(
-            'feature-extraction',
-            'Xenova/all-MiniLM-L6-v2'
-        );
+    const firebaseConfig = {
+        apiKey: "AIzaSyB3iNhAA8YDha8VYSXgqET3sZC00iV_q7U",
+        authDomain: "skald-story.firebaseapp.com",
+        projectId: "skald-story",
+        storageBucket: "skald-story.appspot.com",
+        messagingSenderId: "516647957540",
+        appId: "1:516647957540:web:8282fbc3c03c2f5ec654b1",
+        measurementId: "G-ZY5DS5R1MD"
+    };
 
-        console.log(await generateEmbeddings("once upon a time, there lived a princess in a castle, who").data);
-    }*/
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore();
 
-    // narrate
+    // narrate function
 
 	let text = "once upon a time, there lived a princess in a castle, who";
 	async function query(data) {
