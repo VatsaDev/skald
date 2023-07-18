@@ -20,15 +20,15 @@
     const app = initializeApp(firebaseConfig);
     const db = getFirestore();
 
-    // narrate function
-
-    var text = "once upon a time, there lived a princess in a castle, who"
+    var text = "write a story about a viking who found a dragons treasure..."
 
     async function gquery(data){
         const url = 'https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyDucoz8cp-KDI5_LWXBzbepSc6MN1Ly-Iw';
 
         var textBody = '{ "prompt": { "text": "'+data+'"} }'
-
+        
+        document.getElementById("naraBtn").disabled = true
+        
         const response = await fetch(url, {
             method: 'POST',
             headers: {
@@ -40,6 +40,7 @@
         const gtext = await response.json();
         console.log(gtext.candidates[0].output);
         text = gtext.candidates[0].output
+        document.getElementById("naraBtn").disabled = false
     }
 
 	/*async function query(data) {
@@ -58,17 +59,18 @@
         return result;
     }*/ // replace with bert adjective replace
 
-    function narrate(){
-        text = document.getElementById("editor").value
+    var btnText = "narrate"
+
+    function narrate(){        
         gquery(text)
     }
 </script>
 
 <section>
 	<h1 class="text-center text-8xl m-8 font-bold">Create</h1>
-	<textarea id="editor" class="bg-slate-100 block w-4/5 h-96 mx-auto drop-shadow-2xl rounded-lg p-8" type="text" placeholder="hello">{text}</textarea>
+	<textarea id="editor" class="bg-slate-100 block w-4/5 h-96 mx-auto drop-shadow-2xl rounded-lg p-8" type="text" placeholder="hello" bind:value={text}></textarea>
     <div id="btn-wrapper" class="w-4/5 mx-auto">
-        <button class="bg-amber-500 text-white w-48 h-10 rounded-full m-8 float-right" 
+        <button id="naraBtn" class="enabled:bg-amber-500 enabled:text-white w-48 h-10 rounded-full m-8 float-right disabled:bg-slate-600 disabled:text-slate-100" 
             on:click={narrate}>
         narrate
         </button>
