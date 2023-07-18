@@ -33,9 +33,6 @@
                 },
                 method: "POST",
                 body: JSON.stringify({"inputs": data}),
-                parameters: {
-                    max_new_tokens: 250
-                }
             }
         );
         const result = await response.json();
