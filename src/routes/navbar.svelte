@@ -9,12 +9,15 @@
   </div>
   <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
     <div class="text-sm lg:flex-grow">
-      <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-slate-100 hover:text-white mr-4 hover:underline">Home</a> 
-      <a href="/pricing" class="block mt-4 lg:inline-block lg:mt-0 text-slate-100 hover:text-white mr-4 hover:underline">
+      <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-slate-100 hover:text-white mr-4 hover:underline mx-2">Home</a> 
+      <a href="/pricing" class="block mt-4 lg:inline-block lg:mt-0 text-slate-100 hover:text-white mr-4 hover:underline mx-2">
         Pricing
       </a> 
-      <a href="/about" class="block mt-4 lg:inline-block lg:mt-0 text-slate-100 hover:text-white hover:underline">
+      <a href="/about" class="block mt-4 lg:inline-block lg:mt-0 text-slate-100 hover:text-white hover:underline mx-2">
         About
+      </a> 
+      <a href="/promptGen" class="block mt-4 lg:inline-block lg:mt-0 text-slate-100 hover:text-white hover:underline mx-2">
+        Prompt Generator
       </a> 
     </div>
     <div>
