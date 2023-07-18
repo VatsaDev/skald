@@ -25,14 +25,17 @@
 	let text = "once upon a time, there lived a princess in a castle, who";
 	async function query(data) {
         const response = await fetch(
-            "https://api-inference.huggingface.co/models/bigscience/bloom-560m",//falcon-7b-instruct
+            "https://api-inference.huggingface.co/models/tiiuae/falcon-7b-instruct",
             {
                 headers: { 
                     "Content-Type": "application/json",
                     Authorization: `Bearer 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`
                 },
                 method: "POST",
-                body: JSON.stringify(data),
+                body: JSON.stringify({"inputs": data}),
+                parameters: {
+                    max_new_tokens: 250
+                }
             }
         );
         const result = await response.json();
@@ -41,7 +44,7 @@
     function narrate(){
         text = document.getElementById("editor").value
         query(text).then((response) => {
-            console.log(response[0])
+            console.log(response)
             text = response[0].generated_text;
         })
     }

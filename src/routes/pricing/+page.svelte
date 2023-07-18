@@ -15,6 +15,7 @@
       </ul>
     </div>
     <div class="w-full lg:w-1/3 bg-slate-900 m-2 p-2 rounded-lg">
+      <p class="text-center m-2 text-amber-500">Coming soon!</p>
       <h1 class="text-center text-4xl m-8">Traveller Plan</h1>
       <h1 class="text-center text-2xl m-8">9.99/month</h1>
       <p class="text-center m-8">For Writers, Small Businesses, and Parents who need the perfect bedtime story every night</p>
@@ -23,6 +24,7 @@
       </ul>
     </div>
     <div class="w-full lg:w-1/3 bg-slate-900 m-2 p-2 rounded-lg">
+      <p class="text-center m-2 text-amber-500">Coming soon!</p>
       <h1 class="text-center text-4xl m-8">Royal Plan</h1>
       <h1 class="text-center text-2xl m-8">19.99/month</h1>
       <p class="text-center m-8">For Enterprises</p>
