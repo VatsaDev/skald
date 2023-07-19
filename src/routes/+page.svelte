@@ -40,6 +40,33 @@
 	}
 </script>
 
+<style>
+.typewriter {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(20, end),
+    blink-caret .5s step-end 8;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  25% { border-color: transparent }
+}
+</style>
+
 <svelte:head>
 	<title>Skald</title>
 	<meta name="description" content="Svelte demo app" />
@@ -48,10 +75,10 @@
 <section>
 	<header class="w-full p-8 bg-cover bg-center text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('{path}')">
 		<img src="./logo-white.png" alt="logo-black" class="mx-auto mt-6"><br>
-		<h1 class="font-sans font-bold text-8xl text-center my-2">
+		<h1 class="font-sans font-bold text-8xl text-center my-2 text-shadow-2xl">
 			Skald
 		</h1>
-		<h2 class="text-center text-4xl my-8">
+		<h2 class="text-center text-4xl my-8 typewriter">
 				{quote}
 		</h2>
 		<h2 class="text-center text-lg my-8">
@@ -60,17 +87,23 @@
 	</header>
 
 	<div class="grid grid-cols-2">
-		<div>
+		<div class="p-8 m-8">
 			<h2 class="text-center text-xl m-8">Make your own stories, as <span class="text-amber-500 font-bold">amazing</span> as they can be, with <span class="text-amber-500 font-bold">Powerful AI Models</span> </h2>
 			<p class="text-center">Use the power of google's most advanced AI model, Palm 2</p>
 		</div>
 		<img src="https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/dragonFight.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
-		<img src="./banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
-		<h2 class="text-center text-xl my-4">Make your stories, as <span class="text-amber-500 font-bold">descriptive</span> as they can be, with <span class="text-amber-500 font-bold">Word Suggestions</span> </h2>
-  	<h2 class="text-center text-xl my-4">Don't like it? get a <span class="text-amber-500 font-bold">Full Rewrite</span></h2>
-		<img src="../banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
-		<img src="../banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
-		<h2 class="text-center text-xl my-4">Tailor your stories, by <span class="text-amber-500 font-bold">Age group</span> and <span class="text-amber-500 font-bold">Author Style</span> </h2>
+		<img src="https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
+		<div class="p-8 m-8">
+			<h2 class="text-center text-xl my-4">Make your stories, as <span class="text-amber-500 font-bold">descriptive</span> as they can be, with <span class="text-amber-500 font-bold">Word Suggestions</span> </h2>
+  	</div>
+		<div class="p-8 m-8">
+			<h2 class="text-center text-xl my-4">Don't like it? get a <span class="text-amber-500 font-bold">Full Rewrite</span></h2>
+		</div>
+		<img src="https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
+		<img src="https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
+		<div class="p-8 m-8">
+			<h2 class="text-center text-xl my-4">Tailor your stories, by <span class="text-amber-500 font-bold">Age group</span> and <span class="text-amber-500 font-bold">Author Style</span> </h2>
+		</div>
 	</div>	
 	<footer class="my-8 mx-2 invisible lg:visible">
 		<p class="font-mono">Copyright Vatsa 2023-present, all rights reserved</p>
