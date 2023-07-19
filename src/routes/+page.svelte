@@ -34,7 +34,7 @@
 				{quote}
 		</h2>
 		<h2 class="text-center text-lg my-8">
-			Unique, Evocative Stories with the power of Generative AI, at your fingertips
+			Unique, Evocative Stories with the power of <span class="text-amber-500 font-bold">Generative AI</span>, at your fingertips
 		</h2>
 	</header>
 
@@ -49,7 +49,7 @@
   	<h2 class="text-center text-xl my-4">Don't like it? get a <span class="text-amber-500 font-bold">Full Rewrite</span></h2>
 		<img src="/banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
 		<img src="/banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
-		<h2 class="text-center text-xl my-4">Tailor your stories, by <span class="text-amber-500 font-bold">Age group</span> and <span class="text-amber-500 font-bold">Diverse Story Types</span> </h2>
+		<h2 class="text-center text-xl my-4">Tailor your stories, by <span class="text-amber-500 font-bold">Age group</span> and <span class="text-amber-500 font-bold">Author Style</span> </h2>
 	</div>	
 	<footer class="my-8 mx-2 invisible lg:visible">
 		<p class="font-mono">Copyright Vatsa 2023-present, all rights reserved</p>

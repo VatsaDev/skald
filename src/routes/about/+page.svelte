@@ -1,9 +1,11 @@
-import { dev } from '$app/environment';
+<svelte:head>
+	<title>About</title>
+	<meta name="description" content="About" />
+</svelte:head>
 
-// we don't need any JS on this page, though we'll load
-// it in dev so that we get hot module replacement
-export const csr = dev;
-
-// since there's no dynamic data here, we can prerender
-// it so that it gets served as a static asset in production
-export const prerender = true;
+<section>
+  <img src="/logo-black.png" class="my-8 mx-auto" alt="black logo">
+	<h1 class="text-center text-8xl font-bold m-8">About Us</h1>
+  <p class="text-center w-1/2 my-8 mx-auto">
+  Skald is an innovative artificial intelligence platform designed to assist writers, artists, and creatives from all backgrounds and skill levels. We offer a variety of tools and resources, including automated prompt generators, and detailed stories made with Powerful Ai models Our goal is to provide our users with the tools, inspiration and guidance so they can unlock their full writing potential and bring their most ambitious projects to life.</p>
+</section>

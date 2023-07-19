@@ -16,7 +16,7 @@
       <a href="/about" class="block mt-4 lg:inline-block lg:mt-0 text-slate-100 hover:text-white hover:underline mx-2">
         About
       </a> 
-      <a href="/promptGen" class="block mt-4 lg:inline-block lg:mt-0 text-slate-100 hover:text-white hover:underline mx-2">
+      <a href="/prompt" class="block mt-4 lg:inline-block lg:mt-0 text-slate-100 hover:text-white hover:underline mx-2">
         Prompt Generator
       </a> 
     </div>
