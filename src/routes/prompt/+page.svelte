@@ -2,7 +2,11 @@
 	<title>Skald</title>
 	<meta name="description" content="Prompt Generator" />
 </svelte:head>
-
+<style>
+	* {
+		box-sizing: border-box;
+	}
+</style>
 <section>
 	<h1 class="text-center text-8xl font-bold m-8">Prompt Generator</h1>
 	<p class="text-center text-lg m-8">Our model is from Palm 2, the same as <a href="https://bard.google.com/"><span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Google Bard</span><img src="/gbard.svg" alt="google bard" class=" inline w-12 h-12 m-2 p-2"></a></p>
@@ -17,6 +21,6 @@
     </ul>
 	</div>
 	<h2 class="text-center text-3xl font-bold m-8">Choosing a descriptive prompt</h2>
-	<p class="text-center text-lg m-8">When we make stories, we want them to be sensational</p>
+	<p class="text-center text-lg m-8 w-1/3">When we make stories, we want them to be sensational, and that involves adding descriptions to your prompts, to help Palm create better stories.</p>
 
 </section>

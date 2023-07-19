@@ -34,13 +34,17 @@
 	}if (path == pathArray[9]){
 		quote = "Mine Unobtanium on an Exoplanet far far away"
 	}if (path == pathArray[10]){
-		quote = "Travel deep to the kingdom of the mermen"
+		quote = "Travel deep to the kingdom of the merpeople"
 	}if (path == pathArray[11]){
 		quote = "Survive the fires of the underworld"
 	}
 </script>
 
 <style>
+* {
+		box-sizing: border-box;
+	}
+
 .typewriter {
   color: #fff;
   font-family: monospace;
