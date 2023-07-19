@@ -17,5 +17,6 @@
     </ul>
 	</div>
 	<h2 class="text-center text-3xl font-bold m-8">Choosing a descriptive prompt</h2>
-	<p class="text-center text-xl m-8">When we make stories, </p>
+	<p class="text-center text-lg m-8">When we make stories, we want them to be sensational</p>
+
 </section>

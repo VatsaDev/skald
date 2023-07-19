@@ -86,7 +86,7 @@
 		</h2>
 	</header>
 
-	<div class="grid grid-cols-2">
+	<div class="grid grid-cols-1 lg:grid-cols-2">
 		<div class="p-8 m-8">
 			<h2 class="text-center text-xl m-8">Make your own stories, as <span class="text-amber-500 font-bold">amazing</span> as they can be, with <span class="text-amber-500 font-bold">Powerful AI Models</span> </h2>
 			<p class="text-center">Use the power of google's most advanced AI model, Palm 2</p>
