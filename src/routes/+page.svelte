@@ -1,5 +1,5 @@
 <script>
-	var pathArray = ["https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/dragonFight.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/dwarfMine.jpg","/banners/fantasyCastle.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/frozenWaste.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/jungleTemple.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/magicSwamp.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/rusticVillage.jpg"]
+	var pathArray = ["https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/dragonFight.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/dwarfMine.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/fantasyCastle.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/frozenWaste.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/jungleTemple.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/magicSwamp.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/rusticVillage.jpg"]
 	var path = pathArray[Math.floor(Math.random() * pathArray.length)];
 	var quote = ""
 	if (path == pathArray[0]){
@@ -7,7 +7,7 @@
 	}if (path == pathArray[1]){
 		quote = "Visit the Dwarven mines to the north"
 	}if (path == pathArray[2]){
-		quote = "Visit the home of the Royals"
+		quote = "Visit the castle of the Royal Family"
 	}if (path == pathArray[3]){
 		quote = "Trudge Through frozen wastelands"
 	}if (path == pathArray[4]){
@@ -18,6 +18,33 @@
 		quote = "Get some Bread and Ale at the Village tavern"
 	}
 </script>
+
+<style>
+.typewriter {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(20, end),
+    blink-caret .5s step-end 8;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  25% { border-color: transparent }
+}
+</style>
 
 <svelte:head>
 	<title>Skald</title>
@@ -30,7 +57,7 @@
 		<h1 class="font-sans font-bold text-8xl text-center my-2">
 			Skald
 		</h1>
-		<h2 class="text-center text-4xl my-8">
+		<h2 class="text-center text-4xl my-8 typewriter">
 				{quote}
 		</h2>
 		<h2 class="text-center text-lg my-8">
@@ -44,11 +71,11 @@
 			<p class="text-center">Use the power of google's most advanced AI model, Palm 2</p>
 		</div>
 		<img src="https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/dragonFight.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
-		<img src="./banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
+		<img src="https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
 		<h2 class="text-center text-xl my-4">Make your stories, as <span class="text-amber-500 font-bold">descriptive</span> as they can be, with <span class="text-amber-500 font-bold">Word Suggestions</span> </h2>
   	<h2 class="text-center text-xl my-4">Don't like it? get a <span class="text-amber-500 font-bold">Full Rewrite</span></h2>
-		<img src="../banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
-		<img src="../banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
+		<img src="https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
+		<img src="https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
 		<h2 class="text-center text-xl my-4">Tailor your stories, by <span class="text-amber-500 font-bold">Age group</span> and <span class="text-amber-500 font-bold">Author Style</span> </h2>
 	</div>	
 	<footer class="my-8 mx-2 invisible lg:visible">
