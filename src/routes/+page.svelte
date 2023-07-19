@@ -1,5 +1,5 @@
 <script>
-	var pathArray = ["/banners/dragonFight.jpg","/banners/dwarfMine.jpg","/banners/fantasyCastle.jpg","/banners/frozenWaste.jpg","/banners/jungleTemple.jpg","/banners/magicSwamp.jpg","/banners/rusticVillage.jpg"]
+	var pathArray = ["https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/dragonFight.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/dwarfMine.jpg","/banners/fantasyCastle.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/frozenWaste.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/jungleTemple.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/magicSwamp.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/rusticVillage.jpg"]
 	var path = pathArray[Math.floor(Math.random() * pathArray.length)];
 	var quote = ""
 	if (path == pathArray[0]){
@@ -43,7 +43,7 @@
 			<h2 class="text-center text-xl m-8">Make your own stories, as <span class="text-amber-500 font-bold">amazing</span> as they can be, with <span class="text-amber-500 font-bold">Powerful AI Models</span> </h2>
 			<p class="text-center">Use the power of google's most advanced AI model, Palm 2</p>
 		</div>
-		<img src="./banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
+		<img src="https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/dragonFight.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
 		<img src="./banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
 		<h2 class="text-center text-xl my-4">Make your stories, as <span class="text-amber-500 font-bold">descriptive</span> as they can be, with <span class="text-amber-500 font-bold">Word Suggestions</span> </h2>
   	<h2 class="text-center text-xl my-4">Don't like it? get a <span class="text-amber-500 font-bold">Full Rewrite</span></h2>
