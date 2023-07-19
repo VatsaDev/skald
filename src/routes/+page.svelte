@@ -26,7 +26,7 @@
 
 <section>
 	<header class="w-full p-8 bg-cover bg-center text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('{path}')">
-		<img src="/logo-white.png" alt="logo-black" class="mx-auto mt-6"><br>
+		<img src="./logo-white.png" alt="logo-black" class="mx-auto mt-6"><br>
 		<h1 class="font-sans font-bold text-8xl text-center my-2">
 			Skald
 		</h1>
@@ -43,12 +43,12 @@
 			<h2 class="text-center text-xl m-8">Make your own stories, as <span class="text-amber-500 font-bold">amazing</span> as they can be, with <span class="text-amber-500 font-bold">Powerful AI Models</span> </h2>
 			<p class="text-center">Use the power of google's most advanced AI model, Palm 2</p>
 		</div>
-		<img src="/banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
-		<img src="/banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
+		<img src="./banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
+		<img src="./banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
 		<h2 class="text-center text-xl my-4">Make your stories, as <span class="text-amber-500 font-bold">descriptive</span> as they can be, with <span class="text-amber-500 font-bold">Word Suggestions</span> </h2>
   	<h2 class="text-center text-xl my-4">Don't like it? get a <span class="text-amber-500 font-bold">Full Rewrite</span></h2>
-		<img src="/banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
-		<img src="/banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
+		<img src="../banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
+		<img src="../banners/fantasyCastle.jpg" alt="palm" class="w-3/4 mx-auto drop-shadow-2xl my-8">
 		<h2 class="text-center text-xl my-4">Tailor your stories, by <span class="text-amber-500 font-bold">Age group</span> and <span class="text-amber-500 font-bold">Author Style</span> </h2>
 	</div>	
 	<footer class="my-8 mx-2 invisible lg:visible">
