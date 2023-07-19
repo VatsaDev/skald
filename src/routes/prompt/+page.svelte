@@ -21,6 +21,9 @@
     </ul>
 	</div>
 	<h2 class="text-center text-3xl font-bold m-8">Choosing a descriptive prompt</h2>
-	<p class="text-center text-lg m-8 w-1/3">When we make stories, we want them to be sensational, and that involves adding descriptions to your prompts, to help Palm create better stories.</p>
-
+	<p class="text-center text-lg m-8 w-1/3">When we make stories, we want them to be sensational, and that involves adding descriptions to your prompts, like names or senses, to help Palm create better stories.</p>
+	<p>
+		before: write a story about a magic waterfall
+		after: write a story about the magical waterfall of odin, with its rushing rapids and deep blue water
+	</p>
 </section>
