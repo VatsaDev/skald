@@ -1,5 +1,16 @@
 <script>
-	var pathArray = ["https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/dragonFight.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/dwarfMine.jpg","/banners/fantasyCastle.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/frozenWaste.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/jungleTemple.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/magicSwamp.jpg","https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/rusticVillage.jpg"]
+	var pathArray = ["https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/dragonFight.jpg",
+									"https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/dwarfMine.jpg",
+									"https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/fantasyCastle.jpg",
+									"https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/frozenWaste.jpg",
+									"https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/jungleTemple.jpg",
+									"https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/magicSwamp.jpg",
+									"https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/rusticVillage.jpg",
+									"https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/yaeger.jpg",
+									"https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/planeFlight.jpg",
+									"https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/spaceStation.jpg",
+									"https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/underwaterPalace.jpg",
+									"https://raw.githubusercontent.com/VatsaDev/skald/main/static/banners/underworld.jpg"]
 	var path = pathArray[Math.floor(Math.random() * pathArray.length)];
 	var quote = ""
 	if (path == pathArray[0]){
@@ -16,6 +27,16 @@
 		quote = "Tread the dangers of the swamp"
 	}if (path == pathArray[6]){
 		quote = "Get some Bread and Ale at the Village tavern"
+	}if (path == pathArray[7]){
+		quote = "Climb Cliffs with a Yaeger"
+	}if (path == pathArray[8]){
+		quote = "Fly a plane through the clouds"
+	}if (path == pathArray[9]){
+		quote = "Mine Unobtanium on an Exoplanet far far away"
+	}if (path == pathArray[10]){
+		quote = "Travel deep to the kingdom of the mermen"
+	}if (path == pathArray[11]){
+		quote = "Survive the fires of the underworld"
 	}
 </script>
 
