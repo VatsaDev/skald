@@ -23,7 +23,7 @@
     var text = "write a story about a viking who found a dragons treasure..."
 
     async function gquery(data){
-        const url = 'https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyDucoz8cp-KDI5_LWXBzbepSc6MN1Ly-Iw';
+        const url = 'https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText';
 
         var textBody = '{ "prompt": { "text": "'+data+'"} }'
         
